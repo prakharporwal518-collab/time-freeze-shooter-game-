@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time Freeze</title>
+    <meta name="description" content="A browser FPS where time only moves when you move." />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⏳</text></svg>" />
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <!-- The 3D game is drawn on this canvas. Everything else is ordinary HTML layered on top. -->
+    <canvas id="game"></canvas>
+
+    <!-- HUD: visible while playing -->
+    <div id="hud" class="hidden">
+      <div id="crosshair"></div>
+      <div id="hud-level" class="hud-box"></div>
+      <div id="hud-enemies" class="hud-box"></div>
+      <div id="hud-ammo" class="hud-box"><span id="ammo-value"></span><span id="ammo-label"></span></div>
+      <div id="hud-frozen">◆ TIME FROZEN ◆</div>
+      <div id="hud-prompt"></div>
+      <div id="hud-hint"></div>
+    </div>
+
+    <!-- Big centre-screen messages such as LEVEL CLEAR -->
+    <div id="banner" class="hidden">
+      <div id="banner-title"></div>
+      <div id="banner-sub"></div>
+      <div id="banner-hindi"></div>
+    </div>
+
+    <!-- Replay overlay -->
+    <div id="replay" class="hidden">
+      <div class="bar top"></div>
+      <div class="bar bottom"></div>
+      <div id="replay-label">● REPLAY</div>
+      <div id="replay-skip">SPACE / CLICK TO SKIP</div>
+      <div id="replay-progress"><div id="replay-progress-fill"></div></div>
+    </div>
+
+    <!-- Screens -->
+    <div id="screen-menu" class="screen">
+      <h1 class="title">TIME <span>FREEZE</span></h1>
+      <p class="tagline">समय तभी चलता है जब तुम चलते हो<br /><small>TIME MOVES ONLY WHEN YOU MOVE</small></p>
+      <button data-action="start">START</button>
+      <button data-action="levels">LEVEL SELECT</button>
+      <button data-action="controls">CONTROLS</button>
+    </div>
+
+    <div id="screen-levels" class="screen hidden">
+      <h2>LEVEL SELECT</h2>
+      <div id="level-grid"></div>
+      <button data-action="back">BACK</button>
+    </div>
+
+    <div id="screen-controls" class="screen hidden">
+      <h2>CONTROLS</h2>
+      <table class="controls">
+        <tr><td><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd></td><td>Move (moving makes time flow)</td></tr>
+        <tr><td><kbd>Mouse</kbd></td><td>Look around</td></tr>
+        <tr><td><kbd>Left click</kbd></td><td>Shoot · punch / grab when unarmed</td></tr>
+        <tr><td><kbd>Right click</kbd></td><td>Throw what you are holding</td></tr>
+        <tr><td><kbd>E</kbd></td><td>Pick up / swap the item you look at</td></tr>
+        <tr><td><kbd>R</kbd></td><td>Restart level</td></tr>
+        <tr><td><kbd>M</kbd></td><td>Mute sound</td></tr>
+        <tr><td><kbd>Esc</kbd></td><td>Pause</td></tr>
+      </table>
+      <p class="tips">
+        Stand still and time almost stops — use it to think.<br />
+        One hit kills you. One bullet shatters them.<br />
+        Thrown objects stun enemies and knock the gun out of their hands. Catch it!<br />
+        No weapon? Punch once to stun, again to shatter.
+      </p>
+      <button data-action="back">BACK</button>
+    </div>
+
+    <div id="screen-pause" class="screen hidden">
+      <h2>PAUSED</h2>
+      <button data-action="resume">RESUME</button>
+      <button data-action="restart">RESTART LEVEL</button>
+      <button data-action="menu">MAIN MENU</button>
+    </div>
+
+    <div id="screen-death" class="screen hidden">
+      <h2 class="dead">YOU DIED</h2>
+      <p class="big-hint">Press <kbd>R</kbd> to restart</p>
+      <button data-action="restart">RESTART</button>
+      <button data-action="menu">MAIN MENU</button>
+    </div>
+
+    <div id="screen-win" class="screen hidden">
+      <h2 class="win">ALL LEVELS CLEAR</h2>
+      <p class="tagline">शाबाश! · You stopped time and walked away.</p>
+      <button data-action="menu">MAIN MENU</button>
+    </div>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

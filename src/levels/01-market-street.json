@@ -1,0 +1,69 @@
+{
+  "id": "market",
+  "name": "Market Street",
+  "hindi": "बाज़ार",
+  "size": [18, 46],
+  "theme": {
+    "background": "#06030d", "fog": "#1a0a2e", "fogDensity": 0.028,
+    "floor": "#17131f", "accent": "#ff2bd6",
+    "wall": "#1c1230", "wallHeight": 9, "wallStyle": "windows",
+    "ambient": "#6a55a0", "ambientIntensity": 1.1, "stars": true
+  },
+  "player": { "x": 0, "z": 20, "yaw": 0, "weapon": "pistol", "ammo": 6 },
+  "lights": [
+    { "pos": [0, 4, 18], "color": "#00e5ff", "intensity": 45 },
+    { "pos": [-5, 4, 9], "color": "#ff2bd6", "intensity": 50 },
+    { "pos": [5, 4, 1], "color": "#ffb347", "intensity": 50 },
+    { "pos": [-5, 4, -7], "color": "#00e5ff", "intensity": 50 },
+    { "pos": [5, 4, -14], "color": "#ff2bd6", "intensity": 50 },
+    { "pos": [0, 5, -21], "color": "#ffd000", "intensity": 60 }
+  ],
+  "props": [
+    { "type": "stall", "x": -7.6, "z": 15, "rot": 90, "color": "#ff2bd6", "text": "मिठाई" },
+    { "type": "stall", "x": -7.6, "z": 7, "rot": 90, "color": "#00e5ff" },
+    { "type": "stall", "x": -7.6, "z": -1, "rot": 90, "color": "#ffd000", "text": "मसाला" },
+    { "type": "stall", "x": -7.6, "z": -9, "rot": 90, "color": "#7dff5a" },
+    { "type": "stall", "x": -7.6, "z": -17, "rot": 90, "color": "#ff7a00", "text": "फल" },
+    { "type": "stall", "x": 7.6, "z": 11, "rot": 270, "color": "#ffd000", "text": "साड़ी" },
+    { "type": "stall", "x": 7.6, "z": 3, "rot": 270, "color": "#ff7a00" },
+    { "type": "stall", "x": 7.6, "z": -5, "rot": 270, "color": "#ff2bd6", "variant": "chai" },
+    { "type": "stall", "x": 7.6, "z": -13, "rot": 270, "color": "#00e5ff", "text": "मोबाइल" },
+    { "type": "rickshaw", "x": 2.6, "z": 12, "rot": 0 },
+    { "type": "crate", "x": -2.6, "z": 8, "size": 1.2 },
+    { "type": "crate", "x": -1.4, "z": 8.1, "size": 1, "h": 0.8 },
+    { "type": "cart", "x": 3, "z": 2.5, "rot": 90 },
+    { "type": "barricade", "x": -3, "z": -3, "rot": 0 },
+    { "type": "crate", "x": 1.2, "z": -7.5, "size": 1.1 },
+    { "type": "crate", "x": 2.4, "z": -7.5, "size": 1, "h": 1.6 },
+    { "type": "rickshaw", "x": -3.2, "z": -12.5, "rot": 180 },
+    { "type": "cart", "x": 3.6, "z": -17, "rot": 0 },
+    { "type": "barricade", "x": -1, "z": -19.5, "rot": 0 },
+    { "type": "lamp", "x": -5.6, "z": 3, "rot": 90 },
+    { "type": "lamp", "x": 5.6, "z": -9, "rot": 270 },
+    { "type": "lamp", "x": 5.6, "z": 17, "rot": 270 },
+    { "type": "sign", "x": 0, "z": -22.9, "rot": 0, "text": "बाज़ार", "color": "#ff2bd6", "w": 7, "y": 5.5 },
+    { "type": "sign", "x": -8.9, "z": 11, "rot": 90, "text": "HOTEL होटल", "color": "#00e5ff", "w": 4, "y": 5.5 },
+    { "type": "sign", "x": 8.9, "z": -1, "rot": 270, "text": "पान", "color": "#7dff5a", "w": 3, "y": 5.2 },
+    { "type": "sign", "x": -8.9, "z": -13, "rot": 90, "text": "DOSA डोसा", "color": "#ffd000", "w": 4, "y": 5.4 },
+    { "type": "sign", "x": 8.9, "z": 19, "rot": 270, "text": "दवाखाना", "color": "#ff3b3b", "w": 4, "y": 5.0 }
+  ],
+  "strings": [
+    { "from": [-9, 18], "to": [9, 18], "y": 6.2 },
+    { "from": [-9, 9], "to": [9, 9], "y": 6.2 },
+    { "from": [-9, 0], "to": [9, 0], "y": 6.2 },
+    { "from": [-9, -9], "to": [9, -9], "y": 6.2 },
+    { "from": [-9, -18], "to": [9, -18], "y": 6.2 }
+  ],
+  "enemies": [
+    { "type": "gunner", "x": -3, "z": -4.5 },
+    { "type": "gunner", "x": 4.5, "z": -10 },
+    { "type": "runner", "x": 0, "z": -21.5 },
+    { "type": "gunner", "x": -5, "z": -21, "delay": 5 }
+  ],
+  "pickups": [
+    { "type": "bottle", "x": -7.6, "z": 7.6 },
+    { "type": "bottle", "x": 7.6, "z": 3.4 },
+    { "type": "plate", "x": -7.6, "z": -0.6 },
+    { "type": "bottle", "x": 7.6, "z": -4.2 }
+  ]
+}
