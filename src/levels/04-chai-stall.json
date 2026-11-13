@@ -1,0 +1,75 @@
+{
+  "id": "chai",
+  "name": "Chai Stall",
+  "hindi": "चाय की टपरी",
+  "size": [24, 26],
+  "theme": {
+    "background": "#0a0503", "fog": "#24110a", "fogDensity": 0.026,
+    "floor": "#1c1512", "accent": "#ffb000",
+    "wall": "#241812", "wallHeight": 7, "wallStyle": "windows",
+    "ambient": "#8a6a4a", "ambientIntensity": 1.1, "stars": true
+  },
+  "player": { "x": 0, "z": 11.5, "yaw": 0 },
+  "lights": [
+    { "pos": [0, 3, -8], "color": "#ffb000", "intensity": 70 },
+    { "pos": [-6.5, 3, 1.5], "color": "#ffd98a", "intensity": 45 },
+    { "pos": [7, 3.5, 3], "color": "#ff2bd6", "intensity": 40 },
+    { "pos": [9.5, 3, -7], "color": "#00e5ff", "intensity": 40 },
+    { "pos": [-9, 3, -8], "color": "#ff7a00", "intensity": 40 },
+    { "pos": [0, 4, 9], "color": "#7a8cff", "intensity": 40 }
+  ],
+  "props": [
+    { "type": "stall", "x": 0, "z": -9.5, "rot": 0, "w": 4, "color": "#ffb000", "variant": "chai" },
+    { "type": "tree", "x": -6.5, "z": 1.5 },
+    { "type": "bench", "x": -3.2, "z": -5.6, "rot": 0, "color": "#5a3a1c" },
+    { "type": "bench", "x": 3.2, "z": -5.6, "rot": 0, "color": "#5a3a1c" },
+    { "type": "bench", "x": -8.5, "z": -6, "rot": 90, "color": "#5a3a1c" },
+    { "type": "table", "x": -3.5, "z": -2, "color": "#1d6fa8" },
+    { "type": "table", "x": 3.5, "z": -2, "color": "#1d6fa8" },
+    { "type": "table", "x": 6.5, "z": 3.5, "color": "#a8401d" },
+    { "type": "table", "x": 0, "z": 3.5, "color": "#a8401d" },
+    { "type": "scooter", "x": 9.3, "z": -9, "rot": 0 },
+    { "type": "scooter", "x": 10.5, "z": -9, "rot": 0, "color": "#c2185b" },
+    { "type": "scooter", "x": -10, "z": 8, "rot": 90, "color": "#e0b000" },
+    { "type": "crate", "x": 8, "z": 8, "size": 1.1 },
+    { "type": "crate", "x": 9.2, "z": 8, "size": 1, "h": 1.6 },
+    { "type": "crate", "x": -10, "z": -11, "size": 1.2 },
+    { "type": "cart", "x": -4, "z": 8, "rot": 0 },
+    { "type": "rickshaw", "x": 10, "z": 0, "rot": 0 },
+    { "type": "lamp", "x": -11.5, "z": -2, "rot": 90 },
+    { "type": "lamp", "x": 11.5, "z": 6, "rot": 270 },
+    { "type": "sign", "x": -11.9, "z": 4, "rot": 90, "text": "गरम चाय ₹10", "color": "#ffb000", "w": 4.5, "y": 4.2 },
+    { "type": "sign", "x": 11.9, "z": -4, "rot": 270, "text": "कटिंग CHAI", "color": "#ff2bd6", "w": 4.5, "y": 4.4 },
+    { "type": "sign", "x": 7, "z": -12.9, "rot": 0, "text": "समोसा", "color": "#7dff5a", "w": 3.4, "y": 4.2 },
+    { "type": "sign", "x": -7, "z": -12.9, "rot": 0, "text": "बन मस्का", "color": "#00e5ff", "w": 3.4, "y": 4.2 }
+  ],
+  "strings": [
+    { "from": [-6.5, 1.5], "to": [0, -9.5], "y": 4.4, "sag": 0.5 },
+    { "from": [-6.5, 1.5], "to": [-12, 13], "y": 4.4, "sag": 0.6 },
+    { "from": [-6.5, 1.5], "to": [8, 13], "y": 4.4, "sag": 0.8 },
+    { "from": [12, -13], "to": [0, -9.5], "y": 4.6, "sag": 0.6 },
+    { "from": [12, 2], "to": [0, -9.5], "y": 4.6, "sag": 0.7 }
+  ],
+  "enemies": [
+    { "type": "runner", "x": -3, "z": -7.6 },
+    { "type": "runner", "x": 4, "z": -7.6 },
+    { "type": "gunner", "x": 8, "z": -4.5 },
+    { "type": "gunner", "x": -5.5, "z": -11.5, "delay": 3 },
+    { "type": "runner", "x": 10.5, "z": 10.5, "delay": 6 },
+    { "type": "runner", "x": -10, "z": 11, "delay": 8 }
+  ],
+  "pickups": [
+    { "type": "bottle", "x": 0, "z": 3.5 },
+    { "type": "bottle", "x": 0.35, "z": 3.8 },
+    { "type": "plate", "x": -0.35, "z": 3.2 },
+    { "type": "bottle", "x": 6.5, "z": 3.5 },
+    { "type": "plate", "x": 6.8, "z": 3.2 },
+    { "type": "bottle", "x": -3.5, "z": -2 },
+    { "type": "plate", "x": -3.2, "z": -1.7 },
+    { "type": "bottle", "x": 3.5, "z": -2 },
+    { "type": "bottle", "x": 3.2, "z": -2.3 },
+    { "type": "plate", "x": -1.2, "z": -9.4 },
+    { "type": "plate", "x": 1.5, "z": -9.4 },
+    { "type": "bottle", "x": -4, "z": 8.2 }
+  ]
+}

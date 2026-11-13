@@ -1,0 +1,69 @@
+{
+  "id": "rooftop",
+  "name": "Rooftop",
+  "hindi": "छत",
+  "size": [30, 30],
+  "theme": {
+    "background": "#05030f", "fog": "#120a26", "fogDensity": 0.014,
+    "floor": "#1b1820", "accent": "#ff7a00",
+    "wall": "#2a2630", "wallHeight": 1.1, "wallStyle": "plain",
+    "ambient": "#5a5a9a", "ambientIntensity": 1.2,
+    "stars": true, "skyline": true
+  },
+  "player": { "x": 0, "z": 13, "yaw": 0 },
+  "lights": [
+    { "pos": [0, 4.5, -12], "color": "#ff2bd6", "intensity": 70, "distance": 20 },
+    { "pos": [-8, 3.8, -4.5], "color": "#00e5ff", "intensity": 45 },
+    { "pos": [11, 3.5, -9], "color": "#ff7a00", "intensity": 50 },
+    { "pos": [0, 5, 6], "color": "#7a8cff", "intensity": 55, "distance": 20 },
+    { "pos": [9, 3, 7], "color": "#ff2bd6", "intensity": 40 },
+    { "pos": [-10, 3, 9], "color": "#00e5ff", "intensity": 40 }
+  ],
+  "boxes": [
+    { "pos": [-8, -8], "size": [4, 3, 4], "color": "#2c2835", "trim": "#00e5ff" },
+    { "pos": [-8, 0.0, -5.95], "size": [1.1, 2.1, 0.06], "color": "#bdf6ff", "glow": true, "solid": false },
+    { "pos": [-2, -9], "size": [5, 1.1, 0.4], "color": "#2a2630", "trim": "#ff7a00" },
+    { "pos": [6, 8.5], "size": [0.4, 1.1, 4], "color": "#2a2630", "trim": "#ff7a00" },
+    { "pos": [-11, 2], "size": [4, 1.1, 0.4], "color": "#2a2630", "trim": "#ff7a00" },
+    { "pos": [-4, -14.6], "size": [0.3, 5.6, 0.3], "color": "#1c1f28" },
+    { "pos": [4, -14.6], "size": [0.3, 5.6, 0.3], "color": "#1c1f28" }
+  ],
+  "props": [
+    { "type": "sign", "x": 0, "z": -14.6, "rot": 0, "text": "होटल ROYAL", "color": "#ff2bd6", "w": 8.5, "y": 4.5 },
+    { "type": "tank", "x": 10.5, "z": -12 },
+    { "type": "tank", "x": 13, "z": -12, "trim": "#00e5ff" },
+    { "type": "tank", "x": -12.5, "z": 6.5 },
+    { "type": "ac", "x": 0, "z": 2, "rot": 0 },
+    { "type": "ac", "x": 4, "z": -4, "rot": 90 },
+    { "type": "ac", "x": -4, "z": -2.5, "rot": 0 },
+    { "type": "ac", "x": 10, "z": 3, "rot": 90 },
+    { "type": "ac", "x": 2, "z": 9, "rot": 0 },
+    { "type": "solar", "x": 9, "z": -4, "rot": 180 },
+    { "type": "solar", "x": 9, "z": -6.2, "rot": 180 },
+    { "type": "dish", "x": -13.5, "z": -13.5, "rot": 90 },
+    { "type": "dish", "x": 13.5, "z": 12, "rot": 270 },
+    { "type": "crate", "x": -5, "z": 6, "size": 1.1 },
+    { "type": "crate", "x": -5, "z": 7.15, "size": 1, "h": 0.7 },
+    { "type": "crate", "x": 12.5, "z": 8, "size": 1.2 }
+  ],
+  "strings": [
+    { "from": [-6, -6], "to": [6, 6.5], "y": 3.4, "sag": 0.5 },
+    { "from": [-15, 15], "to": [-6, -6], "y": 3.4, "sag": 0.6 },
+    { "from": [6, 6.5], "to": [15, 15], "y": 3.2, "sag": 0.5 }
+  ],
+  "enemies": [
+    { "type": "gunner", "x": -2, "z": -10.5 },
+    { "type": "gunner", "x": 11, "z": -8.5 },
+    { "type": "runner", "x": -8, "z": -4.5 },
+    { "type": "gunner", "x": 6, "z": -12.5, "delay": 4 },
+    { "type": "runner", "x": 13, "z": 0, "delay": 6 },
+    { "type": "gunner", "x": -12.5, "z": -11, "delay": 9 }
+  ],
+  "pickups": [
+    { "type": "pistol", "x": -5, "z": 7.15, "ammo": 6 },
+    { "type": "bottle", "x": 2, "z": 9 },
+    { "type": "bottle", "x": 0.3, "z": 2 },
+    { "type": "plate", "x": -5, "z": 6 },
+    { "type": "bottle", "x": 12.5, "z": 8 }
+  ]
+}
